@@ -34,68 +34,78 @@
     <hr>
     <h2>@Lists</h2>
     <h3>Unorderd list</h3>
-    <ul>
+    <p>this list will not have  the bullet</p>
+    <ul class="non-bullet">
+    
         <li>Item One</li>
         <li>Iten Two</li>
         <li>Item Three</li>
     </ul>
 
     <h3>unorderd inline list</h3>
-    <ul >
-        <li>Inline item one</li>
-        <li>Inline item two</li>
-        <li>Inline item Three</li>
+    <ul class="non-bullet">
+        <li class="list-item-inline">Inline item one</li>
+        <li class="list-item-inline" >Inline item two</li>
+        <li class="list-item-inline">Inline item Three</li>
     </ul>
 
     <h3>Reverse ordered list</h3>
-    <ol>
-        <li>milk</li>
-        <li>eggs</li>
-        <li>break</li>
+    <ol reversed>
+        <li >milk</li>
+        <li >eggs</li>
+        <li >break</li>
     </ol>
 <hr>
 <h2>@nav</h2>
-<nav>
-    <div>iAmBrand</div>
-    <ul>
-        <li>
-            <a href="/">home</a>
-        </li>
-        <li>
-            <a href="/">products</a>
-        </li>
-        <li>
-            <a href="/">about</a>
-        </li>
+<nav class="navigation container">
+    <div class="nav-brand">iAmBrand</div>
+    <ul class="non-bullet nav-pills">
+        <li class="list-item-inline" >
+            <a class="link link-active"  href="/" >home</a>
+        </li >
+        <liclass="list-item-inline" >
+            <a class="link" href="/">products</a>
+        </li >
+        <li class="list-item-inline" >
+            <a class="link" href="/">about</a>
+        </li >
     </ul>
 </nav>
 <hr>
 <h2>@header</h2>
-<header>
-    <img src="images/hero.svg" alt="">
-<h1>Heading inside header</h1>
+<header class="hero">
+    <img class="hero-image" src="images/hero.svg" alt="">
+<h1 class="hero-heading">Dixit Parmar the <span class="heading-inverted">Web Devloper</span></h1>
 </header>
 <hr>
 
 <h2>@section</h2>
 
-<section>
-    <h3>White section</h3>
-    <p>this will have white background</p>
+<section class="section">
+    <div class="container container-center">
+
+        <h1>White section</h1>
+    <p>We are an open community of developers building resources for a better Web, regardless of brand, browser, or platform. Anyone can contribute and each person who does makes us stronger. Together we can continue to drive innovation on the Web to serve the greater good. It starts here, with you.</p>
+    </div>
+    
 </section>
 
-<section>
-    <h3>off white section</h3>
-    <p>this will have grey background</p>
+<section class="section ow">
+    <div class="container container-center">
+        <h1>off white section</h1>
+        <p>We are an open community of developers building resources for a better Web, regardless of brand, browser, or platform. Anyone can contribute and each person who does makes us stronger. Together we can continue to drive innovation on the Web to serve the greater good. It starts here, with you.</p>
+
+    </div>
+  
 </section>
 <hr>
 <h2>@footer</h2>
-<footer>
-    <div>some small heading inside footer</div>
-    <ul>
-        <li>social one </li>
-        <li>social two</li>
-        <li>social three</li>
+<footer class="footer">
+    <div class="footer-header">some small heading inside footer</div>
+    <ul class="social-links non-bullet">
+        <li class="list-item-inline"><a class="link"  href="#">social one</a >  </li>
+        <li class="list-item-inline"><a class="link"  href="#">social two</a > </li>
+        <li class="list-item-inline"><a class="link"  href="#">social three</a> </li>
     </ul>
 </footer>
 
